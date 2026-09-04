@@ -40,7 +40,7 @@ export default function PrototypeShowcase() {
             Built for the Real World
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            From physical hardware nodes to the comprehensive command center, TVARIT is a fully realized end-to-end solution.
+            From physical hardware nodes to the comprehensive command center, SIREN is a fully realized end-to-end solution.
           </p>
         </div>
 

@@ -26,7 +26,7 @@ export default function CoreInsight() {
             A Green Light Doesn't Guarantee a Clear Road.
           </h3>
           <p className="text-lg text-text-secondary max-w-3xl mx-auto leading-relaxed">
-            EROS goes beyond basic signal preemption to understand the actual emergency path — including real-time routing, physical blockages, responder coordination, and hospital handoff.
+            SIREN goes beyond basic signal preemption to understand the actual emergency path — including real-time routing, physical blockages, responder coordination, and hospital handoff.
           </p>
         </motion.div>
 

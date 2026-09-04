@@ -86,7 +86,7 @@ export default function ImpactSection() {
 
           <div className="max-w-4xl mx-auto text-center p-8 bg-gradient-to-r from-slate-50 via-white to-slate-50 border-y border-slate-200">
              <h3 className="text-2xl md:text-3xl font-black text-command-navy font-display leading-tight">
-               EROS targets the coordination layer that can reduce avoidable emergency mobility friction.
+               SIREN targets the coordination layer that can reduce avoidable emergency mobility friction.
              </h3>
           </div>
         </motion.div>

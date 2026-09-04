@@ -3,7 +3,7 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { MapPin, Eye, BrainCircuit, TrafficCone, ShieldAlert, Hospital } from 'lucide-react'
 
-export default function HowErosCreatesValue() {
+export default function HowSIRENCreatesValue() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
@@ -17,7 +17,7 @@ export default function HowErosCreatesValue() {
   ]
 
   return (
-    <section className="relative py-24 bg-white overflow-hidden" id="how-eros-creates-value">
+    <section className="relative py-24 bg-white overflow-hidden" id="how-SIREN-creates-value">
       <div className="absolute inset-0 bg-road-pattern opacity-[0.03]" />
       
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

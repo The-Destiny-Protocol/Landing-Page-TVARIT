@@ -42,7 +42,7 @@ export default function SourcesPanel() {
           <div className="mt-8 pt-6 border-t border-slate-200">
              <p className="text-[10px] text-slate-400 max-w-3xl leading-relaxed">
                All external statistics presented on this page are drawn from published national and international reports.
-               Projections regarding EROS's capabilities refer to the system's design intent and prototype functionality.
+               Projections regarding SIREN's capabilities refer to the system's design intent and prototype functionality.
              </p>
           </div>
         </motion.div>

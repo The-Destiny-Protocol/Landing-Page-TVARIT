@@ -5,8 +5,8 @@ import PrototypeShowcase from '../components/PrototypeShowcase'
 import ProblemScale from '../components/ProblemScale'
 import CoreInsight from '../components/CoreInsight'
 import TimeCritical from '../components/TimeCritical'
-import ErosDifference from '../components/ErosDifference'
-import HowErosCreatesValue from '../components/HowErosCreatesValue'
+import SIRENDifference from '../components/SIRENDifference'
+import HowSIRENCreatesValue from '../components/HowSIRENCreatesValue'
 import Feasibility from '../components/Feasibility'
 import ImpactSection from '../components/ImpactSection'
 import Scalability from '../components/Scalability'
@@ -32,8 +32,8 @@ export default function LandingPage() {
           <ProblemScale />
           <CoreInsight />
           <TimeCritical />
-          <ErosDifference />
-          <HowErosCreatesValue />
+          <SIRENDifference />
+          <HowSIRENCreatesValue />
           <Feasibility />
           <ImpactSection />
           <Scalability />

@@ -228,7 +228,7 @@ export default function Hero() {
 
             {/* Subheading */}
             <p className="text-lg text-text-secondary leading-relaxed max-w-xl">
-              TVARIT intelligently coordinates ambulances, traffic signals, emergency services and real-time city data to create faster, safer emergency corridors.
+              SIREN intelligently coordinates ambulances, traffic signals, emergency services and real-time city data to create faster, safer emergency corridors.
             </p>
 
             {/* CTAs */}
@@ -282,7 +282,7 @@ export default function Hero() {
               <div className="flex items-center justify-between px-4 py-2 bg-command-navy border-b border-command-navy/20">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-emergency-red animate-pulse" />
-                  <span className="text-xs text-white font-semibold tracking-wider">TVARIT COMMAND</span>
+                  <span className="text-xs text-white font-semibold tracking-wider">SIREN COMMAND</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-xs text-green-400 font-medium">● LIVE</span>

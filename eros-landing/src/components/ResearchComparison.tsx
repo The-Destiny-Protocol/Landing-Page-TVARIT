@@ -25,10 +25,10 @@ export default function ResearchComparison() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-black text-command-navy font-display uppercase tracking-tight mb-6">
-            Why EROS is Different
+            Why SIREN is Different
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            "EROS extends the coordination layer beyond signal timing."
+            "SIREN extends the coordination layer beyond signal timing."
           </p>
         </motion.div>
 
@@ -53,7 +53,7 @@ export default function ResearchComparison() {
               ))}
            </div>
 
-           {/* EROS Approach */}
+           {/* SIREN Approach */}
            <motion.div 
              initial={{ opacity: 0, scale: 0.95 }}
              animate={inView ? { opacity: 1, scale: 1 } : {}}
@@ -65,7 +65,7 @@ export default function ResearchComparison() {
               <div className="relative z-10">
                  <h3 className="text-2xl font-black text-corridor-green font-display mb-6 flex items-center gap-2">
                    <span className="w-2 h-2 rounded-full bg-corridor-green animate-pulse" />
-                   EROS
+                   SIREN
                  </h3>
                  
                  <div className="flex flex-wrap gap-2 mb-6">

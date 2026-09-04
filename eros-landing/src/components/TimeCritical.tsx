@@ -31,7 +31,7 @@ export default function TimeCritical() {
           </h2>
           <div className="max-w-3xl mx-auto p-6 bg-white border border-slate-200 rounded-2xl shadow-sm">
              <p className="text-lg md:text-xl text-text-secondary font-medium italic text-center">
-               "EROS focuses on the mobility and coordination delays that technology can directly address during emergency transport."
+               "SIREN focuses on the mobility and coordination delays that technology can directly address during emergency transport."
              </p>
           </div>
         </motion.div>

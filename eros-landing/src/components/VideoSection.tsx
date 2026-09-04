@@ -10,7 +10,7 @@ export default function VideoSection() {
             <span className="text-xs font-bold tracking-wider text-emergency-red uppercase">Live Demonstration</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-command-navy font-display mb-4">
-            See TVARIT in Action
+            See SIREN in Action
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
             Watch how our platform seamlessly coordinates emergency response and traffic management in real-time.
@@ -30,7 +30,7 @@ export default function VideoSection() {
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
                 src="https://www.youtube.com/embed/4Cl_1SkXkDk"
-                title="TVARIT Demo Video"
+                title="SIREN Demo Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               ></iframe>
@@ -52,7 +52,7 @@ export default function VideoSection() {
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
                 src="/SIREN_Presentation.pdf#view=FitH"
-                title="TVARIT Final Presentation"
+                title="SIREN Final Presentation"
               ></iframe>
             </div>
             <div className="bg-command-navy p-4 flex-grow flex items-center justify-between px-6">

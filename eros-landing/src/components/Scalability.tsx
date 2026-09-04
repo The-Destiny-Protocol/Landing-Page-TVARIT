@@ -30,7 +30,7 @@ export default function Scalability() {
             From Pilot Corridor to City Network
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
-            EROS can be introduced incrementally rather than requiring city-wide deployment on day one.
+            SIREN can be introduced incrementally rather than requiring city-wide deployment on day one.
           </p>
         </motion.div>
 

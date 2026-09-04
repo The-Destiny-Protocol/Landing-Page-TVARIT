@@ -30,7 +30,7 @@ export default function FinalCTA() {
             </span>
           </h2>
           <p className="text-lg sm:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-            TVARIT turns real-time data into coordinated emergency action, ensuring priority routes when it matters most.
+            SIREN turns real-time data into coordinated emergency action, ensuring priority routes when it matters most.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

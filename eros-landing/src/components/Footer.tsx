@@ -100,7 +100,7 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-6 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <h3 className="text-3xl font-black text-white font-display mb-2 tracking-tight">TVARIT</h3>
+            <h3 className="text-3xl font-black text-white font-display mb-2 tracking-tight">SIREN</h3>
             <p className="text-sm text-slate-400 font-medium mb-4 uppercase tracking-widest">Emergency Response System</p>
             <p className="text-sm text-slate-400 leading-relaxed mb-6">
               Intelligent emergency mobility platform for real-time ambulance coordination and traffic preemption. Saving lives through milliseconds.
@@ -133,7 +133,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-sm text-slate-500">
-            © {new Date().getFullYear()} TVARIT. Prototype platform for demonstration.
+            © {new Date().getFullYear()} SIREN. Prototype platform for demonstration.
           </p>
           <div className="flex items-center gap-4">
             <a href="#" className="p-2 bg-slate-800 rounded-full text-slate-400 hover:text-white hover:bg-slate-700 transition-colors" aria-label="GitHub">

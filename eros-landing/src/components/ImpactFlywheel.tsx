@@ -31,7 +31,7 @@ export default function ImpactFlywheel() {
              transition={{ type: "spring", duration: 1 }}
              className="absolute z-20 w-32 h-32 bg-command-navy rounded-full shadow-[0_0_50px_rgba(16,42,67,0.3)] flex flex-col items-center justify-center border-4 border-white"
            >
-             <span className="text-3xl font-black text-white font-display tracking-widest">EROS</span>
+             <span className="text-3xl font-black text-white font-display tracking-widest">SIREN</span>
              <span className="text-[10px] text-corridor-green font-bold tracking-widest uppercase mt-1">Flywheel</span>
            </motion.div>
 

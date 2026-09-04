@@ -61,7 +61,7 @@ export default function Feasibility() {
               <div className="text-slate-400 pl-1">+</div>
               <div className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-slate-300"/> Existing CCTV infra</div>
               <div className="text-slate-400 pl-1">+</div>
-              <div className="flex items-center gap-2 text-corridor-green"><div className="w-2 h-2 rounded-full bg-corridor-green"/> EROS Intelligence</div>
+              <div className="flex items-center gap-2 text-corridor-green"><div className="w-2 h-2 rounded-full bg-corridor-green"/> SIREN Intelligence</div>
             </div>
             <p className="text-xs text-slate-500 font-medium leading-relaxed">
               Integrates with existing infrastructure rather than requiring new road construction.
