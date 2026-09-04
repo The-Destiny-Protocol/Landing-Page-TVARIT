@@ -1,17 +1,21 @@
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-import ProblemSection from '../components/ProblemSection'
-import SolutionFlow from '../components/SolutionFlow'
-import HowItWorks from '../components/HowItWorks'
-import GreenCorridor from '../components/GreenCorridor'
-import IntelligenceSection from '../components/IntelligenceSection'
-import SOSSection from '../components/SOSSection'
-import CommandCenterPreview from '../components/CommandCenterPreview'
+import VideoSection from '../components/VideoSection'
+import PrototypeShowcase from '../components/PrototypeShowcase'
+import ProblemScale from '../components/ProblemScale'
+import CoreInsight from '../components/CoreInsight'
+import TimeCritical from '../components/TimeCritical'
+import ErosDifference from '../components/ErosDifference'
+import HowErosCreatesValue from '../components/HowErosCreatesValue'
+import Feasibility from '../components/Feasibility'
 import ImpactSection from '../components/ImpactSection'
-import TechnologySection from '../components/TechnologySection'
-import ArchitectureHighlights from '../components/ArchitectureHighlights'
+import Scalability from '../components/Scalability'
+import ResearchComparison from '../components/ResearchComparison'
+import ImpactFlywheel from '../components/ImpactFlywheel'
+import PublishedResearch from '../components/PublishedResearch'
 import TeamSection from '../components/TeamSection'
 import FinalCTA from '../components/FinalCTA'
+import SourcesPanel from '../components/SourcesPanel'
 import Footer from '../components/Footer'
 import RouteMotif from '../components/RouteMotif'
 
@@ -23,19 +27,23 @@ export default function LandingPage() {
         <Navbar />
         <main>
           <Hero />
-          <ProblemSection />
-          <SolutionFlow />
-          <HowItWorks />
-          <GreenCorridor />
-          <IntelligenceSection />
-          <SOSSection />
-          <CommandCenterPreview />
+          <VideoSection />
+          <PrototypeShowcase />
+          <ProblemScale />
+          <CoreInsight />
+          <TimeCritical />
+          <ErosDifference />
+          <HowErosCreatesValue />
+          <Feasibility />
           <ImpactSection />
-          <TechnologySection />
-          <ArchitectureHighlights />
+          <Scalability />
+          <ResearchComparison />
+          <ImpactFlywheel />
+          <PublishedResearch />
           <TeamSection />
           <FinalCTA />
         </main>
+        <SourcesPanel />
         <Footer />
       </div>
     </div>

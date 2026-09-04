@@ -255,13 +255,19 @@ export default function Hero() {
               </motion.a>
             </div>
 
-            {/* Trust note */}
-            <p className="text-xs text-text-secondary flex items-center gap-2 pt-1">
-              <span className="w-4 h-4 rounded-full bg-corridor-green/10 border border-corridor-green/30 flex items-center justify-center">
-                <span className="w-1.5 h-1.5 rounded-full bg-corridor-green" />
-              </span>
-              Smart India Hackathon 2026 — Prototype Platform
-            </p>
+            {/* Evidence Note */}
+            <div className="mt-2 p-4 rounded-xl bg-emergency-red/5 border border-emergency-red/10">
+              <div className="flex items-baseline gap-2 mb-1">
+                <span className="text-2xl font-black text-emergency-red font-display">1,72,890</span>
+                <span className="text-sm font-semibold text-command-navy">road fatalities in India in 2023</span>
+              </div>
+              <p className="text-sm text-text-secondary leading-relaxed mb-2">
+                Behind every number is a patient, a family and a response that cannot afford unnecessary delay.
+              </p>
+              <p className="text-[10px] text-slate-400 font-medium uppercase tracking-wide">
+                Source: Ministry of Road Transport & Highways — Road Accidents in India 2023
+              </p>
+            </div>
           </motion.div>
 
           {/* ── Right: Map Visual ── */}

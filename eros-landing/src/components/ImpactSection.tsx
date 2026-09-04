@@ -1,150 +1,113 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { Building2, Heart, TrendingUp } from 'lucide-react'
-
-const pillars = [
-  {
-    icon: Heart,
-    title: 'Social Impact',
-    color: '#E53935',
-    bg: 'from-red-50 to-white',
-    items: [
-      'Faster emergency movement',
-      'Improved emergency coordination',
-      'Better response visibility',
-      'Greater road safety around emergency corridors',
-    ],
-  },
-  {
-    icon: TrendingUp,
-    title: 'Economic Impact',
-    color: '#1565C0',
-    bg: 'from-blue-50 to-white',
-    items: [
-      'Reduced emergency-response delays',
-      'More efficient use of police resources',
-      'Lower productivity loss from unnecessary road blockages',
-      'Better utilization of emergency infrastructure',
-    ],
-  },
-  {
-    icon: Building2,
-    title: 'Urban Impact',
-    color: '#16A34A',
-    bg: 'from-green-50 to-white',
-    items: [
-      'Smarter traffic coordination',
-      'Real-time emergency mobility',
-      'More efficient intersections',
-      'Connected emergency-response ecosystem',
-    ],
-  },
-]
-
-const ecosystemLabels = [
-  'Ambulances', 'Police', 'Traffic Signals', 'Hospitals', 'Control Rooms', 'AI Edge Nodes',
-]
+import { HeartPulse, Users, Landmark, Scale, Leaf } from 'lucide-react'
 
 export default function ImpactSection() {
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-60px' })
+  const inView = useInView(ref, { once: true, margin: '-100px' })
+
+  const socialImpacts = [
+    { title: 'HUMAN', desc: 'Potentially reduce avoidable emergency mobility delays.', icon: <HeartPulse size={20} /> },
+    { title: 'SOCIAL', desc: 'Improve emergency visibility and coordination across congested areas.', icon: <Users size={20} /> },
+    { title: 'GOVERNANCE', desc: 'Give traffic and emergency authorities a shared operational view.', icon: <Landmark size={20} /> },
+    { title: 'EQUITY', desc: 'Reduce the geographic penalty of congestion for people who depend on emergency transport.', icon: <Scale size={20} /> },
+  ]
+
+  const economicCosts = ['ROAD CRASH', 'MEDICAL COST', 'LOST INCOME', 'LOST PRODUCTIVITY', 'TRAFFIC DISRUPTION']
 
   return (
-    <section id="impact" className="relative py-24 bg-white overflow-hidden">
+    <section className="relative py-24 bg-white overflow-hidden" id="impact">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 24 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="w-8 h-0.5 bg-emergency-red rounded" />
-            <span className="text-xs font-semibold text-emergency-red tracking-widest uppercase">Widespread Impact</span>
-            <span className="w-8 h-0.5 bg-emergency-red rounded" />
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-black text-command-navy font-display">
-            Saving Time. Saving Lives.{' '}
-            <span className="text-gradient-emergency">Moving Cities.</span>
+        
+        {/* SOCIAL IMPACT */}
+        <motion.div ref={ref} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="mb-32">
+          <h2 className="text-3xl md:text-5xl font-black text-command-navy font-display mb-12 text-center uppercase tracking-tight">
+            The Impact Extends Beyond the Ambulance
           </h2>
-        </motion.div>
 
-        {/* Three pillars */}
-        <div className="grid md:grid-cols-3 gap-6 mb-20">
-          {pillars.map((pillar, i) => (
-            <motion.div
-              key={pillar.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: i * 0.12 }}
-              className={`relative rounded-2xl border border-surface-border bg-gradient-to-b ${pillar.bg} p-6 shadow-sm overflow-hidden`}
-            >
-              <div className="absolute top-0 left-0 right-0 h-1" style={{ backgroundColor: pillar.color }} />
-              <div
-                className="w-12 h-12 rounded-xl flex items-center justify-center mb-4"
-                style={{ backgroundColor: `${pillar.color}12`, color: pillar.color }}
-              >
-                <pillar.icon size={22} />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            {socialImpacts.map((impact, i) => (
+              <div key={i} className="bg-surface-bg p-6 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                 <div className="w-12 h-12 bg-white rounded-xl shadow-sm border border-slate-200 flex items-center justify-center text-command-navy mb-4">
+                   {impact.icon}
+                 </div>
+                 <h4 className="font-bold text-command-navy mb-2 tracking-wider">{impact.title}</h4>
+                 <p className="text-sm text-text-secondary leading-relaxed flex-1">{impact.desc}</p>
               </div>
-              <h3 className="text-xl font-bold text-command-navy mb-4">{pillar.title}</h3>
-              <ul className="space-y-2">
-                {pillar.items.map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-sm text-text-secondary">
-                    <span className="w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0" style={{ backgroundColor: pillar.color }} />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        {/* Ecosystem diagram */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={inView ? { opacity: 1, scale: 1 } : {}}
-          transition={{ duration: 0.7, delay: 0.4 }}
-          className="relative bg-surface-bg border border-surface-border rounded-2xl p-8 sm:p-12"
-        >
-          <div className="relative flex flex-col items-center">
-            <p className="text-xs font-bold text-corridor-green tracking-widest uppercase mb-2">Faster Response</p>
-            <div className="flex items-center gap-8 sm:gap-16 w-full justify-center flex-wrap">
-              <div className="text-center">
-                <p className="text-xs font-bold text-traffic-amber tracking-wider mb-1">TRAFFIC</p>
-                <p className="text-xs font-bold text-traffic-amber tracking-wider">EFFICIENCY</p>
-                <span className="text-2xl text-traffic-amber hidden sm:block">←</span>
-              </div>
-
-              <div className="relative">
-                <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-command-navy flex items-center justify-center shadow-lg">
-                  <span className="text-2xl sm:text-3xl font-black text-white font-display">TVARIT</span>
-                </div>
-                <div className="absolute -inset-4 rounded-full border-2 border-dashed border-corridor-green/30" />
-              </div>
-
-              <div className="text-center">
-                <p className="text-xs font-bold text-deep-blue tracking-wider mb-1">EMERGENCY</p>
-                <p className="text-xs font-bold text-deep-blue tracking-wider">COORDINATION</p>
-                <span className="text-2xl text-deep-blue hidden sm:block">→</span>
-              </div>
-            </div>
-            <p className="text-xs font-bold text-emergency-red tracking-widest uppercase mt-4">Safer Cities</p>
-
-            {/* Surrounding labels */}
-            <div className="flex flex-wrap justify-center gap-2 mt-8">
-              {ecosystemLabels.map((label) => (
-                <span
-                  key={label}
-                  className="text-xs font-medium px-3 py-1.5 rounded-full bg-white border border-surface-border text-text-secondary"
-                >
-                  {label}
-                </span>
-              ))}
-            </div>
+          <div className="max-w-3xl mx-auto bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center">
+             <p className="text-lg text-command-navy font-medium italic mb-2">
+               "More than 75% of poor households surveyed reported income decline after a road crash."
+             </p>
+             <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
+               World Bank survey evidence
+             </p>
           </div>
         </motion.div>
+
+        {/* ECONOMIC IMPACT */}
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, delay: 0.2 }} className="mb-32">
+          <h2 className="text-3xl md:text-5xl font-black text-command-navy font-display mb-12 text-center uppercase tracking-tight">
+            Road Safety is Also An Economic Issue.
+          </h2>
+
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24 mb-12">
+            
+            <div className="text-center">
+               <div className="text-6xl md:text-8xl font-black text-emergency-red font-display mb-4 leading-none">3.14%</div>
+               <div className="text-xl md:text-2xl font-bold text-command-navy uppercase tracking-wider mb-2">OF GDP</div>
+               <p className="text-sm text-slate-500 font-medium max-w-[200px] mx-auto">
+                 Estimated socioeconomic cost of road crashes in India
+               </p>
+               <p className="text-[10px] text-slate-400 font-medium uppercase tracking-widest mt-4">
+                 Source: Government of India / DIMTS + TRIPP-IIT Delhi study
+               </p>
+            </div>
+
+            <div className="flex flex-col items-center">
+               {economicCosts.map((cost, i) => (
+                 <div key={i} className="flex flex-col items-center">
+                   <div className="px-6 py-3 bg-slate-800 text-white rounded-lg font-bold text-sm tracking-wider w-56 text-center shadow-md">
+                     {cost}
+                   </div>
+                   {i < economicCosts.length - 1 && (
+                     <div className="h-6 w-0.5 bg-slate-300 my-1 relative">
+                        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-0 h-0 border-l-[4px] border-l-transparent border-t-[6px] border-t-slate-300 border-r-[4px] border-r-transparent" />
+                     </div>
+                   )}
+                 </div>
+               ))}
+            </div>
+
+          </div>
+
+          <div className="max-w-4xl mx-auto text-center p-8 bg-gradient-to-r from-slate-50 via-white to-slate-50 border-y border-slate-200">
+             <h3 className="text-2xl md:text-3xl font-black text-command-navy font-display leading-tight">
+               EROS targets the coordination layer that can reduce avoidable emergency mobility friction.
+             </h3>
+          </div>
+        </motion.div>
+
+        {/* ENVIRONMENTAL IMPACT */}
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8, delay: 0.4 }} className="max-w-4xl mx-auto">
+           <div className="bg-corridor-green/5 border border-corridor-green/20 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+              <div className="w-24 h-24 shrink-0 bg-white rounded-full flex items-center justify-center shadow-sm border border-corridor-green/30 text-corridor-green">
+                 <Leaf size={40} />
+              </div>
+              <div>
+                 <h3 className="text-2xl font-black text-corridor-green font-display mb-4 uppercase tracking-wide">
+                   Less Idling. Better Flow.
+                 </h3>
+                 <p className="text-lg text-slate-600 leading-relaxed">
+                   Smarter emergency movement can reduce unnecessary stop-and-go around affected intersections and help minimize avoidable vehicle idling.
+                 </p>
+              </div>
+           </div>
+        </motion.div>
+
       </div>
     </section>
   )
