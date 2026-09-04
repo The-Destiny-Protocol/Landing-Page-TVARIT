@@ -211,13 +211,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="flex flex-col gap-6"
           >
-            {/* Badge */}
-            <div className="flex items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 bg-emergency-red/8 border border-emergency-red/20 text-emergency-red text-xs font-semibold px-3 py-1.5 rounded-full tracking-wider uppercase">
-                <span className="w-1.5 h-1.5 rounded-full bg-emergency-red animate-pulse" />
-                Real-Time Emergency Mobility
-              </span>
-            </div>
+
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-[3.2rem] font-black leading-[1.1] text-command-navy font-display">

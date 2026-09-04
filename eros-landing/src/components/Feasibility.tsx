@@ -43,7 +43,7 @@ export default function Feasibility() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.2 }} className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col h-full">
             <h3 className="text-xl font-black text-command-navy font-display mb-6">LOW-COST HARDWARE</h3>
             <div className="flex-1 flex flex-col justify-center items-center py-8 bg-slate-50 rounded-2xl border border-slate-100 mb-6">
-              <span className="text-4xl font-black text-emergency-red font-display mb-2">₹2,500–₹3,800</span>
+              <span className="text-4xl font-black text-emergency-red font-display mb-2">₹9,000–₹10,000</span>
               <span className="text-xs font-semibold text-slate-500 uppercase tracking-widest text-center">per vehicle</span>
             </div>
             <p className="text-xs text-slate-400 font-medium uppercase tracking-wide flex items-center gap-2">
