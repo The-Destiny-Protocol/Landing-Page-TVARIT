@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: siren-landing
+    runtime: docker
+    # Render auto-detects the Dockerfile in the repo root
+    dockerfilePath: ./Dockerfile
+    # Region — choose what's closest to your users
+    region: singapore
+    plan: free
+    # Render sets PORT=10000 for free tier; our nginx listens on 8080
+    # Override it so Render's health-checks hit the right port
+    envVars:
+      - key: PORT
+        value: "8080"
+    healthCheckPath: /health
+    autoDeploy: true
